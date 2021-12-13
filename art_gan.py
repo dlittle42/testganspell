@@ -100,8 +100,8 @@ output_path = 'output'
 if not os.path.exists(output_path):
     os.makedirs(output_path)
 filename = os.path.join(output_path, f"trained-{cnt}.png")
-    im = Image.fromarray(image_array)
-    im.save(filename)
+im = Image.fromarray(image_array)
+im.save(filename)
 
 
 image_shape = (IMAGE_SIZE, IMAGE_SIZE, IMAGE_CHANNELS)
