@@ -73,7 +73,7 @@ def build_generator(noise_size, channels):
          model.add(Activation('relu'))
     model.summary()
     model.add(Conv2D(channels, kernel_size=3, padding='same'))
-    model.add(Activation(“tanh”))
+    model.add(Activation('tanh'))
     input = Input(shape=(noise_size,))
     generated_image = model(input)
     
