@@ -112,7 +112,8 @@ def save_images(cnt, noise):
 
 
 image_shape = (IMAGE_SIZE, IMAGE_SIZE, IMAGE_CHANNELS)
-optimizer = Adam(1.5e-4, 0.5)
+optimizer =optimizers.Adam(1.5e-4, 0.5)
+#optimizer = Adam(1.5e-4, 0.5)
 discriminator = build_discriminator(image_shape)
 discriminator.compile(loss='binary_crossentropy',
 optimizer=optimizer, metrics=['accuracy'])
