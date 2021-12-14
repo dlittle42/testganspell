@@ -1,7 +1,7 @@
 from tensorflow import keras
-from tensorflow.keras.layers import Input, Reshape, Dropout, Dense, Flatten, BatchNormalization, Activation, ZeroPadding2D, LeakyReLU
+from tensorflow.keras.layers import Input, Reshape, Dropout, Dense, Flatten, BatchNormalization, Activation, ZeroPadding2D, LeakyReLU, UpSampling2D, Conv2D
 #from tensorflow.keras.layers.advanced_activations import LeakyReLU
-from tensorflow.keras.layers.convolutional import UpSampling2D, Conv2D
+#from tensorflow.keras.layers.convolutional import UpSampling2D, Conv2D
 from tensorflow.keras.models import Sequential, Model, load_model
 from tensorflow.keras import optimizers
 
